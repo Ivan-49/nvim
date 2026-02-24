@@ -18,7 +18,17 @@ cmp.setup({
     { name = 'buffer' },
   },
 })
+-- === C / C++ === 
+lsp.clangd.setup({
+    capabilities = capabilities,
+})
+-- == Python ===
+lsp.pyright.setup({
+    capabilities = capadilities,
+})
 
+lsp.asm_lsp.setup({
+capabilities = capabilities,
+})
 -- Настройка LSP для Python (pyright)
-lsp.pyright.setup({})
 
